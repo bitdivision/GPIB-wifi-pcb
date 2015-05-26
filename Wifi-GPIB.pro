@@ -1,4 +1,4 @@
-update=Tue 26 May 2015 21:10:15 BST
+update=Tue 26 May 2015 21:20:43 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,4 @@ LibName33=Lib/stm32f030c6
 LibName34=Lib/conn_centronics_24
 LibName35=Lib/open-project
 LibName36=Lib/mic5504
+LibName37=Lib/esp8266
