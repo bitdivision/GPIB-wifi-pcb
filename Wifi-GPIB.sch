@@ -221,9 +221,9 @@ Wire Wire Line
 	10350 1400 10500 1400
 Wire Wire Line
 	10250 1600 10500 1600
-Text GLabel 10500 1400 2    60   Input ~ 0
+Text GLabel 10500 1400 2    39   Input ~ 0
 ESP_RX
-Text GLabel 10500 1600 2    60   Input ~ 0
+Text GLabel 10500 1600 2    39   Input ~ 0
 ESP_TX
 $Comp
 L TEST W?
@@ -320,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	11000 2400 11000 2550
 Connection ~ 10150 2400
-Text GLabel 9950 2400 0    60   Input ~ 0
+Text GLabel 9950 2400 0    39   Input ~ 0
 ESP_GPIO0
 Wire Notes Line
 	5650 550  11150 550 
@@ -358,7 +358,7 @@ Wire Wire Line
 	5750 1500 6650 1500
 Wire Wire Line
 	6450 1300 6650 1300
-Text GLabel 6450 1300 0    60   Input ~ 0
+Text GLabel 6450 1300 0    39   Input ~ 0
 RESET
 Wire Notes Line
 	5650 2800 5650 550 
@@ -366,7 +366,7 @@ Wire Wire Line
 	5750 1400 5750 1500
 Wire Wire Line
 	9050 1700 9100 1700
-Text GLabel 9100 1700 2    60   Input ~ 0
+Text GLabel 9100 1700 2    39   Input ~ 0
 ESP_GPIO0
 Wire Wire Line
 	9050 1900 9300 1900
@@ -383,4 +383,8 @@ F 3 "" H 9300 2050 60  0000 C CNN
 	1    9300 2050
 	1    0    0    -1  
 $EndComp
+Text GLabel 9050 1300 2    39   Input ~ 0
+ESP_RX
+Text GLabel 9050 1400 2    39   Input ~ 0
+ESP_TX
 $EndSCHEMATC
