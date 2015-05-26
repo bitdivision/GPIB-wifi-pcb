@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BA33BC0FP-E2
+D ROHM  BA33BC0FP-E2  LDO, FIXED, 3.3V, 1A, TO-252-3
+K Voltage Regulator 1A Positive 3.3V TO-252-3
+F http://www.farnell.com/datasheets/1747234.pdf
+$ENDCMP
+#
+#End Doc Library
