@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MIC5504-3.3
+D MICREL SEMICONDUCTOR  MIC5504-3.3YM5 TR  LDO VOLT REG, 0.3A, 3.3V, SOT-23-5
+K SOT-23-5 3.3V LDO Regulator Fixed Positive
+F http://www.farnell.com/datasheets/1856860.pdf
+$ENDCMP
+#
+#End Doc Library
