@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SN75160B
+LIBS:SN75162B
+LIBS:stm32f030c6
+LIBS:conn_centronics_24
+LIBS:open-project
+LIBS:esp8266
+LIBS:ba33bc0fp-e2
+LIBS:ap1117e50g-13
+LIBS:irlml2246tr
+LIBS:Wifi-GPIB-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12/07v2/08v2 U?
+U 1 1 55667714
+P 6050 4250
+F 0 "U?" H 6050 4800 60  0000 C CNN
+F 1 "ESP-12/07v2/08v2" H 6050 3700 60  0000 C CNN
+F 2 "" H 6050 4250 60  0000 C CNN
+F 3 "" H 6050 4250 60  0000 C CNN
+	1    6050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P?
+U 1 1 5566771B
+P 6800 2350
+F 0 "P?" V 6750 2350 50  0000 C CNN
+F 1 "CONN_4" V 6850 2350 50  0000 C CNN
+F 2 "" H 6800 2350 60  0000 C CNN
+F 3 "" H 6800 2350 60  0000 C CNN
+	1    6800 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55667722
+P 6650 2900
+F 0 "#PWR?" H 6650 2900 30  0001 C CNN
+F 1 "GND" H 6650 2830 30  0001 C CNN
+F 2 "" H 6650 2900 60  0000 C CNN
+F 3 "" H 6650 2900 60  0000 C CNN
+	1    6650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2700 6650 2900
+$Comp
+L +3.3V #PWR?
+U 1 1 55667729
+P 6400 2950
+F 0 "#PWR?" H 6400 2910 30  0001 C CNN
+F 1 "+3.3V" H 6400 3060 30  0000 C CNN
+F 2 "" H 6400 2950 60  0000 C CNN
+F 3 "" H 6400 2950 60  0000 C CNN
+	1    6400 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2950 6400 3100
+Wire Wire Line
+	6400 3100 6750 3100
+Wire Wire Line
+	6750 3100 6750 2700
+Wire Wire Line
+	6850 2700 6850 3200
+Wire Wire Line
+	6950 2700 6950 3000
+Wire Wire Line
+	6950 3000 7100 3000
+Wire Wire Line
+	6850 3200 7100 3200
+Text GLabel 7100 3000 2    39   Input ~ 0
+ESP_RX
+Text GLabel 7100 3200 2    39   Input ~ 0
+ESP_TX
+$Comp
+L JUMPER JP?
+U 1 1 55667738
+P 5600 2900
+F 0 "JP?" H 5600 3050 60  0000 C CNN
+F 1 "ESP_FLASH_JUMP" H 5600 2820 40  0000 C CNN
+F 2 "" H 5600 2900 60  0000 C CNN
+F 3 "" H 5600 2900 60  0000 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5566773F
+P 5050 2650
+F 0 "R?" V 5130 2650 40  0000 C CNN
+F 1 "R" V 5057 2651 40  0000 C CNN
+F 2 "" V 4980 2650 30  0000 C CNN
+F 3 "" H 5050 2650 30  0000 C CNN
+	1    5050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 55667746
+P 5050 2350
+F 0 "#PWR?" H 5050 2310 30  0001 C CNN
+F 1 "+3.3V" H 5050 2460 30  0000 C CNN
+F 2 "" H 5050 2350 60  0000 C CNN
+F 3 "" H 5050 2350 60  0000 C CNN
+	1    5050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5566774C
+P 5900 3050
+F 0 "#PWR?" H 5900 3050 30  0001 C CNN
+F 1 "GND" H 5900 2980 30  0001 C CNN
+F 2 "" H 5900 3050 60  0000 C CNN
+F 3 "" H 5900 3050 60  0000 C CNN
+	1    5900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2350 5050 2400
+Wire Wire Line
+	4850 2900 5300 2900
+Wire Wire Line
+	5900 2900 5900 3050
+Connection ~ 5050 2900
+Text GLabel 4850 2900 0    39   Input ~ 0
+ESP_GPIO0
+Text Notes 5400 1700 0    60   ~ 0
+ESP8266 Wifi Module
+Wire Wire Line
+	7250 4400 8000 4400
+$Comp
+L +3.3V #PWR?
+U 1 1 5566775A
+P 8000 4400
+F 0 "#PWR?" H 8000 4360 30  0001 C CNN
+F 1 "+3.3V" H 8000 4510 30  0000 C CNN
+F 2 "" H 8000 4400 60  0000 C CNN
+F 3 "" H 8000 4400 60  0000 C CNN
+	1    8000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 55667760
+P 3950 4000
+F 0 "#PWR?" H 3950 3960 30  0001 C CNN
+F 1 "+3.3V" H 3950 4110 30  0000 C CNN
+F 2 "" H 3950 4000 60  0000 C CNN
+F 3 "" H 3950 4000 60  0000 C CNN
+	1    3950 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4100 4850 4100
+Wire Wire Line
+	4650 3900 4850 3900
+Text GLabel 4650 3900 0    39   Input ~ 0
+RESET
+Wire Wire Line
+	3950 4000 3950 4100
+Wire Wire Line
+	7250 4300 7300 4300
+Wire Wire Line
+	7250 4500 8000 4500
+Wire Wire Line
+	7500 4500 7500 4650
+$Comp
+L GND #PWR?
+U 1 1 5566776E
+P 7500 5350
+F 0 "#PWR?" H 7500 5350 30  0001 C CNN
+F 1 "GND" H 7500 5280 30  0001 C CNN
+F 2 "" H 7500 5350 60  0000 C CNN
+F 3 "" H 7500 5350 60  0000 C CNN
+	1    7500 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 7250 3900 2    39   Input ~ 0
+ESP_RX
+Text GLabel 7250 4000 2    39   Input ~ 0
+ESP_TX
+Wire Wire Line
+	4850 4300 4350 4300
+Wire Wire Line
+	4850 4400 4350 4400
+Wire Wire Line
+	4850 4500 4350 4500
+Text HLabel 4350 4300 0    60   Input ~ 0
+ESP_SPI_CLK
+Text HLabel 4350 4400 0    60   Input ~ 0
+ESP_SPI_MISO
+Text HLabel 4350 4500 0    60   Input ~ 0
+ESP_SPI_MOSI
+$Comp
+L R R?
+U 1 1 55668FA2
+P 7500 4900
+F 0 "R?" V 7580 4900 40  0000 C CNN
+F 1 "R" V 7507 4901 40  0000 C CNN
+F 2 "" V 7430 4900 30  0000 C CNN
+F 3 "" H 7500 4900 30  0000 C CNN
+	1    7500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5350 7500 5150
+Connection ~ 7500 4500
+Text HLabel 8000 4500 2    60   Input ~ 0
+ESP_SPI_CS
+Wire Wire Line
+	4850 4600 2750 4600
+Wire Wire Line
+	2750 4600 2750 4500
+$Comp
+L +3.3V #PWR?
+U 1 1 5566915C
+P 2750 4500
+F 0 "#PWR?" H 2750 4460 30  0001 C CNN
+F 1 "+3.3V" H 2750 4610 30  0000 C CNN
+F 2 "" H 2750 4500 60  0000 C CNN
+F 3 "" H 2750 4500 60  0000 C CNN
+	1    2750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4600 7250 5000
+$Comp
+L GND #PWR?
+U 1 1 556691BF
+P 7250 5000
+F 0 "#PWR?" H 7250 5000 30  0001 C CNN
+F 1 "GND" H 7250 4930 30  0001 C CNN
+F 2 "" H 7250 5000 60  0000 C CNN
+F 3 "" H 7250 5000 60  0000 C CNN
+	1    7250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5566923C
+P 3200 4800
+F 0 "C?" H 3200 4900 40  0000 L CNN
+F 1 "C" H 3206 4715 40  0000 L CNN
+F 2 "" H 3238 4650 30  0000 C CNN
+F 3 "" H 3200 4800 60  0000 C CNN
+	1    3200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5566925F
+P 3200 5000
+F 0 "#PWR?" H 3200 5000 30  0001 C CNN
+F 1 "GND" H 3200 4930 30  0001 C CNN
+F 2 "" H 3200 5000 60  0000 C CNN
+F 3 "" H 3200 5000 60  0000 C CNN
+	1    3200 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4100 8000 4100
+Wire Wire Line
+	7250 4200 8000 4200
+Text GLabel 7300 4300 2    39   Input ~ 0
+ESP_GPIO0
+Text HLabel 8000 4100 2    60   Input ~ 0
+ESP_GPIO4
+Text HLabel 8000 4200 2    60   Input ~ 0
+ESP_GPIO_5
+Text HLabel 4350 4200 0    60   Input ~ 0
+ESP_GPIO_16
+Wire Wire Line
+	4850 4200 4350 4200
+$EndSCHEMATC
