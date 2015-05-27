@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AP1117E50G-13
+D DIODES INC.  AP1117E50G-13  IC, LDO, REG, 5V, SOT223 
+K Regulator LDO 5V 1.0A
+F http://uk.farnell.com/diodes-inc/ap1117e50g-13/ic-ldo-reg-5v-sot223/dp/1825292RL
+$ENDCMP
+#
+#End Doc Library

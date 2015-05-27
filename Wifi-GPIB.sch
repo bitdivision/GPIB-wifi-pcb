@@ -36,12 +36,14 @@ LIBS:conn_centronics_24
 LIBS:open-project
 LIBS:esp8266
 LIBS:ba33bc0fp-e2
+LIBS:ap1117e50g-13
+LIBS:irlml2246tr
 LIBS:Wifi-GPIB-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -129,28 +131,6 @@ F 3 "" H 3050 7300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BARREL_JACK CON?
-U 1 1 5564DEB5
-P 1250 1000
-F 0 "CON?" H 1250 1250 60  0000 C CNN
-F 1 "POWER_BARREL" H 1250 800 60  0000 C CNN
-F 2 "" H 1250 1000 60  0000 C CNN
-F 3 "" H 1250 1000 60  0000 C CNN
-	1    1250 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L MICRO-B_USB U?
-U 1 1 5564E0EA
-P 1250 1900
-F 0 "U?" H 1250 1600 50  0000 C CNN
-F 1 "MICRO-B_USB" H 1250 2200 50  0000 C CNN
-F 2 "" H 1250 1900 60  0000 C CNN
-F 3 "" H 1250 1900 60  0000 C CNN
-	1    1250 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L ESP-12/07v2/08v2 U?
 U 1 1 5564D82B
 P 7850 1650
@@ -159,17 +139,6 @@ F 1 "ESP-12/07v2/08v2" H 7850 1100 60  0000 C CNN
 F 2 "" H 7850 1650 60  0000 C CNN
 F 3 "" H 7850 1650 60  0000 C CNN
 	1    7850 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L BA33BC0FP-E2 U?
-U 1 1 5564E643
-P 2850 950
-F 0 "U?" H 2650 1150 40  0000 C CNN
-F 1 "BA33BC0FP-E2" H 2850 1150 40  0000 L CNN
-F 2 "TO-252" H 2850 1050 30  0000 C CIN
-F 3 "" H 2850 950 60  0000 C CNN
-	1    2850 950 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -316,7 +285,9 @@ $EndComp
 Wire Wire Line
 	10150 1850 10150 1900
 Wire Wire Line
-	9950 2400 10400 2400
+	9950 2400 10150 2400
+Wire Wire Line
+	10150 2400 10400 2400
 Wire Wire Line
 	11000 2400 11000 2550
 Connection ~ 10150 2400
@@ -387,4 +358,10 @@ Text GLabel 9050 1300 2    39   Input ~ 0
 ESP_RX
 Text GLabel 9050 1400 2    39   Input ~ 0
 ESP_TX
+$Sheet
+S 5100 7050 1700 600 
+U 5565FD51
+F0 "Power Circuitry" 60
+F1 "power.sch" 60
+$EndSheet
 $EndSCHEMATC

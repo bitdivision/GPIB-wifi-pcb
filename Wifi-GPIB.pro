@@ -1,4 +1,4 @@
-update=Tue 26 May 2015 21:35:40 BST
+update=Wed 27 May 2015 18:51:53 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,3 +66,5 @@ LibName34=Lib/conn_centronics_24
 LibName35=Lib/open-project
 LibName36=Lib/esp8266
 LibName37=Lib/ba33bc0fp-e2
+LibName38=Lib/ap1117e50g-13
+LibName39=Lib/irlml2246tr
