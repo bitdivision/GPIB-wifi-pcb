@@ -38,6 +38,7 @@ LIBS:esp8266
 LIBS:ba33bc0fp-e2
 LIBS:ap1117e50g-13
 LIBS:irlml2246tr
+LIBS:testpoint
 LIBS:Wifi-GPIB-cache
 EELAYER 25 0
 EELAYER END
@@ -86,8 +87,6 @@ F 3 "" H 6650 2900 60  0000 C CNN
 	1    6650 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6650 2700 6650 2900
 $Comp
 L +3.3V #PWR?
 U 1 1 55667729
@@ -99,23 +98,9 @@ F 3 "" H 6400 2950 60  0000 C CNN
 	1    6400 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 2950 6400 3100
-Wire Wire Line
-	6400 3100 6750 3100
-Wire Wire Line
-	6750 3100 6750 2700
-Wire Wire Line
-	6850 2700 6850 3200
-Wire Wire Line
-	6950 2700 6950 3000
-Wire Wire Line
-	6950 3000 7100 3000
-Wire Wire Line
-	6850 3200 7100 3200
-Text GLabel 7100 3000 2    39   Input ~ 0
-ESP_RX
 Text GLabel 7100 3200 2    39   Input ~ 0
+ESP_RX
+Text GLabel 7100 3000 2    39   Input ~ 0
 ESP_TX
 $Comp
 L JUMPER JP?
@@ -161,19 +146,10 @@ F 3 "" H 5900 3050 60  0000 C CNN
 	1    5900 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 2350 5050 2400
-Wire Wire Line
-	4850 2900 5300 2900
-Wire Wire Line
-	5900 2900 5900 3050
-Connection ~ 5050 2900
 Text GLabel 4850 2900 0    39   Input ~ 0
 ESP_GPIO0
 Text Notes 5400 1700 0    60   ~ 0
 ESP8266 Wifi Module
-Wire Wire Line
-	7250 4400 8000 4400
 $Comp
 L +3.3V #PWR?
 U 1 1 5566775A
@@ -188,28 +164,16 @@ $EndComp
 $Comp
 L +3.3V #PWR?
 U 1 1 55667760
-P 3950 4000
-F 0 "#PWR?" H 3950 3960 30  0001 C CNN
-F 1 "+3.3V" H 3950 4110 30  0000 C CNN
-F 2 "" H 3950 4000 60  0000 C CNN
-F 3 "" H 3950 4000 60  0000 C CNN
-	1    3950 4000
+P 4150 3950
+F 0 "#PWR?" H 4150 3910 30  0001 C CNN
+F 1 "+3.3V" H 4150 4060 30  0000 C CNN
+F 2 "" H 4150 3950 60  0000 C CNN
+F 3 "" H 4150 3950 60  0000 C CNN
+	1    4150 3950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3950 4100 4850 4100
-Wire Wire Line
-	4650 3900 4850 3900
 Text GLabel 4650 3900 0    39   Input ~ 0
 RESET
-Wire Wire Line
-	3950 4000 3950 4100
-Wire Wire Line
-	7250 4300 7300 4300
-Wire Wire Line
-	7250 4500 8000 4500
-Wire Wire Line
-	7500 4500 7500 4650
 $Comp
 L GND #PWR?
 U 1 1 5566776E
@@ -221,21 +185,15 @@ F 3 "" H 7500 5350 60  0000 C CNN
 	1    7500 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 7250 3900 2    39   Input ~ 0
-ESP_RX
 Text GLabel 7250 4000 2    39   Input ~ 0
+ESP_RX
+Text GLabel 1600 7400 2    39   Input ~ 0
 ESP_TX
-Wire Wire Line
-	4850 4300 4350 4300
-Wire Wire Line
-	4850 4400 4350 4400
-Wire Wire Line
-	4850 4500 4350 4500
-Text HLabel 4350 4300 0    60   Input ~ 0
+Text HLabel 4550 4300 0    60   Input ~ 0
 ESP_SPI_CLK
-Text HLabel 4350 4400 0    60   Input ~ 0
+Text HLabel 4550 4400 0    60   Input ~ 0
 ESP_SPI_MISO
-Text HLabel 4350 4500 0    60   Input ~ 0
+Text HLabel 4550 4500 0    60   Input ~ 0
 ESP_SPI_MOSI
 $Comp
 L R R?
@@ -248,15 +206,8 @@ F 3 "" H 7500 4900 30  0000 C CNN
 	1    7500 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7500 5350 7500 5150
-Connection ~ 7500 4500
 Text HLabel 8000 4500 2    60   Input ~ 0
 ESP_SPI_CS
-Wire Wire Line
-	4850 4600 2750 4600
-Wire Wire Line
-	2750 4600 2750 4500
 $Comp
 L +3.3V #PWR?
 U 1 1 5566915C
@@ -268,8 +219,6 @@ F 3 "" H 2750 4500 60  0000 C CNN
 	1    2750 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 4600 7250 5000
 $Comp
 L GND #PWR?
 U 1 1 556691BF
@@ -303,18 +252,215 @@ F 3 "" H 3200 5000 60  0000 C CNN
 	1    3200 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 4100 8000 4100
-Wire Wire Line
-	7250 4200 8000 4200
 Text GLabel 7300 4300 2    39   Input ~ 0
 ESP_GPIO0
 Text HLabel 8000 4100 2    60   Input ~ 0
 ESP_GPIO4
 Text HLabel 8000 4200 2    60   Input ~ 0
 ESP_GPIO_5
-Text HLabel 4350 4200 0    60   Input ~ 0
+Text HLabel 4550 4200 0    60   Input ~ 0
 ESP_GPIO_16
+$Comp
+L TESTPOINT TP?
+U 1 1 55669763
+P 1200 5800
+F 0 "TP?" H 1200 6050 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 5750 60  0001 C CNN
+F 2 "" H 1200 5800 60  0000 C CNN
+F 3 "" H 1200 5800 60  0000 C CNN
+	1    1200 5800
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	4850 4200 4350 4200
+	6650 2700 6650 2900
+Wire Wire Line
+	6400 2950 6400 3100
+Wire Wire Line
+	6400 3100 6750 3100
+Wire Wire Line
+	6750 3100 6750 2700
+Wire Wire Line
+	6850 2700 6850 3200
+Wire Wire Line
+	6950 2700 6950 3000
+Wire Wire Line
+	6950 3000 7100 3000
+Wire Wire Line
+	6850 3200 7100 3200
+Wire Wire Line
+	5050 2350 5050 2400
+Wire Wire Line
+	4850 2900 5300 2900
+Wire Wire Line
+	5900 2900 5900 3050
+Connection ~ 5050 2900
+Wire Wire Line
+	7250 4400 8000 4400
+Wire Wire Line
+	4150 4100 4850 4100
+Wire Wire Line
+	4650 3900 4850 3900
+Wire Wire Line
+	4150 3950 4150 4100
+Wire Wire Line
+	7250 4300 7300 4300
+Wire Wire Line
+	7250 4500 8000 4500
+Wire Wire Line
+	7500 4500 7500 4650
+Wire Wire Line
+	7500 5350 7500 5150
+Connection ~ 7500 4500
+Wire Wire Line
+	4850 4600 2750 4600
+Wire Wire Line
+	2750 4600 2750 4500
+Wire Wire Line
+	7250 4600 7250 5000
+Wire Wire Line
+	7250 4100 8000 4100
+Wire Wire Line
+	7250 4200 8000 4200
+Wire Wire Line
+	4850 4200 4550 4200
+Wire Wire Line
+	4850 4300 4550 4300
+Wire Wire Line
+	4850 4400 4550 4400
+Wire Wire Line
+	4850 4500 4550 4500
+$Comp
+L TESTPOINT TP?
+U 1 1 55669E4F
+P 1200 6000
+F 0 "TP?" H 1200 6250 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 5950 60  0001 C CNN
+F 2 "" H 1200 6000 60  0000 C CNN
+F 3 "" H 1200 6000 60  0000 C CNN
+	1    1200 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TESTPOINT TP?
+U 1 1 55669E83
+P 1200 6200
+F 0 "TP?" H 1200 6450 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 6150 60  0001 C CNN
+F 2 "" H 1200 6200 60  0000 C CNN
+F 3 "" H 1200 6200 60  0000 C CNN
+	1    1200 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TESTPOINT TP?
+U 1 1 55669EAD
+P 1200 6400
+F 0 "TP?" H 1200 6650 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 6350 60  0001 C CNN
+F 2 "" H 1200 6400 60  0000 C CNN
+F 3 "" H 1200 6400 60  0000 C CNN
+	1    1200 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TESTPOINT TP?
+U 1 1 55669F01
+P 1200 6600
+F 0 "TP?" H 1200 6850 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 6550 60  0001 C CNN
+F 2 "" H 1200 6600 60  0000 C CNN
+F 3 "" H 1200 6600 60  0000 C CNN
+	1    1200 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TESTPOINT TP?
+U 1 1 55669F33
+P 1200 6800
+F 0 "TP?" H 1200 7050 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 6750 60  0001 C CNN
+F 2 "" H 1200 6800 60  0000 C CNN
+F 3 "" H 1200 6800 60  0000 C CNN
+	1    1200 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TESTPOINT TP?
+U 1 1 55669F6B
+P 1200 7000
+F 0 "TP?" H 1200 7250 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 6950 60  0001 C CNN
+F 2 "" H 1200 7000 60  0000 C CNN
+F 3 "" H 1200 7000 60  0000 C CNN
+	1    1200 7000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 5800 1600 5800
+Wire Wire Line
+	1200 6000 1600 6000
+Wire Wire Line
+	1200 6200 1600 6200
+Wire Wire Line
+	1200 6400 1600 6400
+Wire Wire Line
+	1200 6600 1600 6600
+Wire Wire Line
+	1200 6800 1600 6800
+Wire Wire Line
+	1200 7000 1600 7000
+Text HLabel 1600 5800 2    60   Input ~ 0
+ESP_GPIO_16
+Text HLabel 1600 7000 2    60   Input ~ 0
+ESP_SPI_CLK
+Text HLabel 1600 6800 2    60   Input ~ 0
+ESP_SPI_MISO
+Text HLabel 1600 6600 2    60   Input ~ 0
+ESP_SPI_MOSI
+Text HLabel 1600 6400 2    60   Input ~ 0
+ESP_SPI_CS
+Text HLabel 1600 6200 2    60   Input ~ 0
+ESP_GPIO_5
+Text HLabel 1600 6000 2    60   Input ~ 0
+ESP_GPIO4
+$Comp
+L TESTPOINT TP?
+U 1 1 5566A6E7
+P 1200 7200
+F 0 "TP?" H 1200 7450 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 7150 60  0001 C CNN
+F 2 "" H 1200 7200 60  0000 C CNN
+F 3 "" H 1200 7200 60  0000 C CNN
+	1    1200 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 7200 1600 7200
+$Comp
+L TESTPOINT TP?
+U 1 1 5566A71B
+P 1200 7400
+F 0 "TP?" H 1200 7650 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 7350 60  0001 C CNN
+F 2 "" H 1200 7400 60  0000 C CNN
+F 3 "" H 1200 7400 60  0000 C CNN
+	1    1200 7400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 7400 1600 7400
+Text GLabel 1600 7200 2    39   Input ~ 0
+ESP_RX
+Text GLabel 7250 3900 2    39   Input ~ 0
+ESP_TX
+Wire Notes Line
+	600  5500 2550 5500
+Wire Notes Line
+	2550 5500 2550 7700
+Wire Notes Line
+	2550 7700 600  7700
+Wire Notes Line
+	600  7700 600  5500
+Text Notes 1300 5650 0    60   ~ 0
+Test Points
 $EndSCHEMATC

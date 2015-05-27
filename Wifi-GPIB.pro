@@ -1,4 +1,4 @@
-update=Wed 27 May 2015 18:51:53 BST
+update=Wed 27 May 2015 21:23:00 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,3 +68,4 @@ LibName36=Lib/esp8266
 LibName37=Lib/ba33bc0fp-e2
 LibName38=Lib/ap1117e50g-13
 LibName39=Lib/irlml2246tr
+LibName40=Lib/testpoint

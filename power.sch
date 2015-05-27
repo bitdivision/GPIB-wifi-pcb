@@ -38,6 +38,7 @@ LIBS:esp8266
 LIBS:ba33bc0fp-e2
 LIBS:ap1117e50g-13
 LIBS:irlml2246tr
+LIBS:testpoint
 LIBS:Wifi-GPIB-cache
 EELAYER 25 0
 EELAYER END
@@ -301,10 +302,6 @@ F 3 "" H 7250 3400 60  0000 C CNN
 $EndComp
 Text Notes 7400 2750 0    60   ~ 0
 Unused
-Text HLabel 4800 2350 2    60   Input ~ 0
-VBARREL
-Text HLabel 4650 5250 0    60   Input ~ 0
-VBARREL
 $Comp
 L +5V #PWR?
 U 1 1 55663FD0
@@ -540,4 +537,8 @@ Wire Wire Line
 	7050 5800 7050 5900
 Text Notes 2550 2950 0    60   ~ 0
 Must be greater than 6.6V\nLikely 12V max
+Text GLabel 4800 2350 2    60   Input ~ 0
+V_BARREL
+Text GLabel 4650 5250 0    60   Input ~ 0
+V_BARREL
 $EndSCHEMATC
