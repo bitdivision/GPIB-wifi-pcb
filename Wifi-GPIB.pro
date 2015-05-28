@@ -1,4 +1,4 @@
-update=Thu 28 May 2015 18:42:07 BST
+update=Thu 28 May 2015 19:22:10 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,3 +71,4 @@ LibName39=Lib/irlml2246tr
 LibName40=Lib/testpoint
 LibName41=Lib/vin
 LibName42=Lib/stm32f072cbt6
+LibName43=Lib/nuf2221w1
