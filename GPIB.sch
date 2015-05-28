@@ -39,6 +39,8 @@ LIBS:ba33bc0fp-e2
 LIBS:ap1117e50g-13
 LIBS:irlml2246tr
 LIBS:testpoint
+LIBS:vin
+LIBS:stm32f072cbt6
 LIBS:Wifi-GPIB-cache
 EELAYER 25 0
 EELAYER END
@@ -54,17 +56,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L STM32F030C6 U?
-U 1 1 55668602
-P 2700 3900
-F 0 "U?" H 1200 5800 60  0000 C CNN
-F 1 "STM32F030C6" H 3950 2000 60  0000 C CNN
-F 2 "LQFP48" H 2700 3900 40  0000 C CIN
-F 3 "" H 2700 3900 60  0000 C CNN
-	1    2700 3900
-	1    0    0    -1  
-$EndComp
 $Comp
 L SN75160B U?
 U 1 1 55668609
@@ -164,4 +155,17 @@ F 3 "" H 5100 2300 60  0000 C CNN
 	1    5100 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L STM32F072CBT6 U?
+U 1 1 55677971
+P 2250 3950
+F 0 "U?" H 1450 5850 60  0000 C CNN
+F 1 "STM32F072CBT6" H 3500 2050 60  0000 C CNN
+F 2 "LQFP48" H 2250 3950 40  0000 C CIN
+F 3 "" H 2250 3950 60  0000 C CNN
+	1    2250 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 2800 2050 0    60   ~ 0
+May replace this with lower\npin count in future versions
 $EndSCHEMATC

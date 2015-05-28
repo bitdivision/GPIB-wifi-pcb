@@ -39,6 +39,8 @@ LIBS:ba33bc0fp-e2
 LIBS:ap1117e50g-13
 LIBS:irlml2246tr
 LIBS:testpoint
+LIBS:vin
+LIBS:stm32f072cbt6
 LIBS:Wifi-GPIB-cache
 EELAYER 25 0
 EELAYER END
@@ -59,7 +61,8 @@ S 1400 2900 2300 1450
 U 5565FD51
 F0 "Power Circuitry" 60
 F1 "power.sch" 60
-F2 "VBARREL" I R 3700 3050 60 
+F3 "USB_D-" I R 3700 3500 60 
+F4 "USB_D+" I R 3700 3800 60 
 $EndSheet
 $Sheet
 S 7050 3900 3450 2250

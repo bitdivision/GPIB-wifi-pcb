@@ -1,4 +1,4 @@
-update=Wed 27 May 2015 21:23:00 BST
+update=Thu 28 May 2015 18:42:07 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,3 +69,5 @@ LibName37=Lib/ba33bc0fp-e2
 LibName38=Lib/ap1117e50g-13
 LibName39=Lib/irlml2246tr
 LibName40=Lib/testpoint
+LibName41=Lib/vin
+LibName42=Lib/stm32f072cbt6

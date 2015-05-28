@@ -39,6 +39,8 @@ LIBS:ba33bc0fp-e2
 LIBS:ap1117e50g-13
 LIBS:irlml2246tr
 LIBS:testpoint
+LIBS:vin
+LIBS:stm32f072cbt6
 LIBS:Wifi-GPIB-cache
 EELAYER 25 0
 EELAYER END
