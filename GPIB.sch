@@ -169,8 +169,6 @@ F 3 "" H 2750 4350 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4450 4050 4850 4050
-Text Label 4850 4050 0    31   ~ 0
-USB_NOE
 Wire Wire Line
 	4450 3950 4850 3950
 Wire Wire Line
@@ -179,4 +177,47 @@ Text HLabel 4850 3850 2    60   Input ~ 0
 USB_D-
 Text HLabel 4850 3950 2    60   Input ~ 0
 USB_D+
+$Comp
+L LED D?
+U 1 1 5567B154
+P 3250 1200
+F 0 "D?" H 3250 1300 50  0000 C CNN
+F 1 "LED" H 3250 1100 50  0000 C CNN
+F 2 "" H 3250 1200 60  0000 C CNN
+F 3 "" H 3250 1200 60  0000 C CNN
+	1    3250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5567B18B
+P 2450 1200
+F 0 "#PWR?" H 2450 1160 30  0001 C CNN
+F 1 "+3.3V" H 2450 1310 30  0000 C CNN
+F 2 "" H 2450 1200 60  0000 C CNN
+F 3 "" H 2450 1200 60  0000 C CNN
+	1    2450 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1200 3050 1200
+$Comp
+L R R?
+U 1 1 5567B1D4
+P 3850 1200
+F 0 "R?" V 3930 1200 40  0000 C CNN
+F 1 "R" V 3857 1201 40  0000 C CNN
+F 2 "" V 3780 1200 30  0000 C CNN
+F 3 "" H 3850 1200 30  0000 C CNN
+	1    3850 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 1200 3600 1200
+Wire Wire Line
+	4100 1200 4250 1200
+Text GLabel 4850 4050 2    60   Input ~ 0
+USB_NOE
+Text GLabel 4250 1200 2    60   Input ~ 0
+USB_NOE
 $EndSCHEMATC
