@@ -31,7 +31,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:SN75160B
 LIBS:SN75162B
-LIBS:stm32f030c6
 LIBS:conn_centronics_24
 LIBS:open-project
 LIBS:esp8266
@@ -41,7 +40,6 @@ LIBS:irlml2246tr
 LIBS:testpoint
 LIBS:vin
 LIBS:stm32f072cbt6
-LIBS:nuf2221w1
 LIBS:Wifi-GPIB-cache
 EELAYER 25 0
 EELAYER END
@@ -156,17 +154,17 @@ F 3 "" H 5100 2300 60  0000 C CNN
 	1    5100 2300
 	1    0    0    -1  
 $EndComp
+Text Notes 1200 2250 0    60   ~ 0
+May replace this with lower\npin count in future versions
 $Comp
 L STM32F072CBT6 U?
-U 1 1 55677971
-P 2250 3950
-F 0 "U?" H 1450 5850 60  0000 C CNN
-F 1 "STM32F072CBT6" H 3500 2050 60  0000 C CNN
-F 2 "LQFP48" H 2250 3950 40  0000 C CIN
-F 3 "" H 2250 3950 60  0000 C CNN
-	1    2250 3950
+U 1 1 5567A2FB
+P 2750 4350
+F 0 "U?" H 1950 6250 60  0000 C CNN
+F 1 "STM32F072CBT6" H 4000 2450 60  0000 C CNN
+F 2 "LQFP48" H 2750 4350 40  0000 C CIN
+F 3 "" H 2750 4350 60  0000 C CNN
+	1    2750 4350
 	1    0    0    -1  
 $EndComp
-Text Notes 2800 2050 0    60   ~ 0
-May replace this with lower\npin count in future versions
 $EndSCHEMATC

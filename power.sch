@@ -31,7 +31,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:SN75160B
 LIBS:SN75162B
-LIBS:stm32f030c6
 LIBS:conn_centronics_24
 LIBS:open-project
 LIBS:esp8266
@@ -41,7 +40,6 @@ LIBS:irlml2246tr
 LIBS:testpoint
 LIBS:vin
 LIBS:stm32f072cbt6
-LIBS:nuf2221w1
 LIBS:Wifi-GPIB-cache
 EELAYER 25 0
 EELAYER END
