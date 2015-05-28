@@ -324,21 +324,21 @@ Wire Wire Line
 Wire Wire Line
 	9300 1850 9450 1850
 Text GLabel 9300 750  0    39   Input ~ 0
-GPIB_DIO1
+GPIB_BUS_D1
 Text GLabel 9300 850  0    39   Input ~ 0
-GPIB_DIO3
+GPIB_BUS_D3
 Text GLabel 9300 1350 0    39   Input ~ 0
-GPIB_DIO5
+GPIB_BUS_D5
 Text GLabel 9300 1450 0    39   Input ~ 0
-GPIB_DIO7
+GPIB_BUS_D7
 Text GLabel 10650 1450 2    39   Input ~ 0
-GPIB_DIO8
+GPIB_BUS_D8
 Text GLabel 10650 1350 2    39   Input ~ 0
-GPIB_DIO6
+GPIB_BUS_D6
 Text GLabel 10650 850  2    39   Input ~ 0
-GPIB_DIO4
+GPIB_BUS_D4
 Text GLabel 10650 750  2    39   Input ~ 0
-GPIB_DIO2
+GPIB_BUS_D2
 Wire Wire Line
 	10650 1550 10750 1550
 Wire Wire Line
@@ -415,21 +415,21 @@ GPIB_BUS_SRQ
 Text GLabel 7600 5750 0    39   Input ~ 0
 GPIB_CTRL_DC
 Text GLabel 9300 1550 0    39   Input ~ 0
-GPIB_REN
+GPIB_BUS_REN
 Text GLabel 9300 1150 0    39   Input ~ 0
-GPIB_IFC
+GPIB_BUS_IFC
 Text GLabel 10650 1050 2    39   Input ~ 0
-GPIB_NDAC
+GPIB_BUS_NDAC
 Text GLabel 9300 1050 0    39   Input ~ 0
-GPIB_NRFD
+GPIB_BUS_NRFD
 Text GLabel 10650 950  2    39   Input ~ 0
-GPIB_DAV
+GPIB_BUS_DAV
 Text GLabel 9300 950  0    39   Input ~ 0
-GPIB_EOI
+GPIB_BUS_EOI
 Text GLabel 9300 1250 0    39   Input ~ 0
-GPIB_ATN
+GPIB_BUS_ATN
 Text GLabel 10650 1150 2    39   Input ~ 0
-GPIB_SRQ
+GPIB_BUS_SRQ
 Text GLabel 9400 3000 2    39   Input ~ 0
 GPIB_DATA_TE
 Text GLabel 7600 3900 0    39   Input ~ 0
