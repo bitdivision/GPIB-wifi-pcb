@@ -167,4 +167,16 @@ F 3 "" H 2750 4350 60  0000 C CNN
 	1    2750 4350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4450 4050 4850 4050
+Text Label 4850 4050 0    31   ~ 0
+USB_NOE
+Wire Wire Line
+	4450 3950 4850 3950
+Wire Wire Line
+	4450 3850 4850 3850
+Text HLabel 4850 3850 2    60   Input ~ 0
+USB_D-
+Text HLabel 4850 3950 2    60   Input ~ 0
+USB_D+
 $EndSCHEMATC
