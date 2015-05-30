@@ -173,8 +173,6 @@ F 3 "" H 4150 3950 60  0000 C CNN
 	1    4150 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 4650 3900 0    39   Input ~ 0
-RESET
 $Comp
 L GND #PWR?
 U 1 1 5566776E
@@ -195,7 +193,7 @@ ESP_SPI_CLK
 Text HLabel 4550 4400 0    60   Input ~ 0
 ESP_SPI_MISO
 Text HLabel 4550 4500 0    60   Input ~ 0
-ESP_SPI_MOSI
+ESP_SPI_MOSI/RXD2
 $Comp
 L R R?
 U 1 1 55668FA2
@@ -208,7 +206,7 @@ F 3 "" H 7500 4900 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 8000 4500 2    60   Input ~ 0
-ESP_SPI_CS
+ESP_SPI_CS/TXD2
 $Comp
 L +3.3V #PWR?
 U 1 1 5566915C
@@ -464,4 +462,6 @@ Wire Notes Line
 	600  7700 600  5500
 Text Notes 1300 5650 0    60   ~ 0
 Test Points
+Text HLabel 4650 3900 0    39   Input ~ 0
+ESP_RESET
 $EndSCHEMATC
