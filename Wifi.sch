@@ -99,10 +99,6 @@ F 3 "" H 6400 2950 60  0000 C CNN
 	1    6400 2950
 	1    0    0    -1  
 $EndComp
-Text GLabel 7100 3200 2    39   Input ~ 0
-ESP_RX
-Text GLabel 7100 3000 2    39   Input ~ 0
-ESP_TX
 $Comp
 L JUMPER JP?
 U 1 1 55667738
@@ -184,16 +180,6 @@ F 3 "" H 7500 5350 60  0000 C CNN
 	1    7500 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 7250 4000 2    39   Input ~ 0
-ESP_RX
-Text GLabel 1600 7400 2    39   Input ~ 0
-ESP_TX
-Text HLabel 4550 4300 0    60   Input ~ 0
-ESP_SPI_CLK
-Text HLabel 4550 4400 0    60   Input ~ 0
-ESP_SPI_MISO
-Text HLabel 4550 4500 0    60   Input ~ 0
-ESP_SPI_MOSI/RXD2
 $Comp
 L R R?
 U 1 1 55668FA2
@@ -205,8 +191,6 @@ F 3 "" H 7500 4900 30  0000 C CNN
 	1    7500 4900
 	1    0    0    -1  
 $EndComp
-Text HLabel 8000 4500 2    60   Input ~ 0
-ESP_SPI_CS/TXD2
 $Comp
 L +3.3V #PWR?
 U 1 1 5566915C
@@ -253,11 +237,11 @@ F 3 "" H 3200 5000 60  0000 C CNN
 $EndComp
 Text GLabel 7300 4300 2    39   Input ~ 0
 ESP_GPIO0
-Text HLabel 8000 4100 2    60   Input ~ 0
-ESP_GPIO4
-Text HLabel 8000 4200 2    60   Input ~ 0
+Text HLabel 8000 4100 2    39   Input ~ 0
+ESP_GPIO_4
+Text HLabel 8000 4200 2    39   Input ~ 0
 ESP_GPIO_5
-Text HLabel 4550 4200 0    60   Input ~ 0
+Text HLabel 4550 4200 0    39   Input ~ 0
 ESP_GPIO_16
 $Comp
 L TESTPOINT TP?
@@ -408,20 +392,12 @@ Wire Wire Line
 	1200 6800 1600 6800
 Wire Wire Line
 	1200 7000 1600 7000
-Text HLabel 1600 5800 2    60   Input ~ 0
+Text HLabel 1600 5800 2    39   Input ~ 0
 ESP_GPIO_16
-Text HLabel 1600 7000 2    60   Input ~ 0
-ESP_SPI_CLK
-Text HLabel 1600 6800 2    60   Input ~ 0
-ESP_SPI_MISO
-Text HLabel 1600 6600 2    60   Input ~ 0
-ESP_SPI_MOSI
-Text HLabel 1600 6400 2    60   Input ~ 0
-ESP_SPI_CS
-Text HLabel 1600 6200 2    60   Input ~ 0
+Text HLabel 1600 6200 2    39   Input ~ 0
 ESP_GPIO_5
-Text HLabel 1600 6000 2    60   Input ~ 0
-ESP_GPIO4
+Text HLabel 1600 6000 2    39   Input ~ 0
+ESP_GPIO_4
 $Comp
 L TESTPOINT TP?
 U 1 1 5566A6E7
@@ -448,10 +424,6 @@ F 3 "" H 1200 7400 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	1200 7400 1600 7400
-Text GLabel 1600 7200 2    39   Input ~ 0
-ESP_RX
-Text GLabel 7250 3900 2    39   Input ~ 0
-ESP_TX
 Wire Notes Line
 	600  5500 2550 5500
 Wire Notes Line
@@ -464,4 +436,36 @@ Text Notes 1300 5650 0    60   ~ 0
 Test Points
 Text HLabel 4650 3900 0    39   Input ~ 0
 ESP_RESET
+Text HLabel 8000 3900 2    39   Input ~ 0
+ESP_TXD
+Text HLabel 8000 4000 2    39   Input ~ 0
+ESP_RXD
+Text HLabel 7100 3200 2    39   Input ~ 0
+ESP_RXD
+Text HLabel 7100 3000 2    39   Input ~ 0
+ESP_TXD
+Wire Wire Line
+	8000 4000 7250 4000
+Wire Wire Line
+	7250 3900 8000 3900
+Text HLabel 1600 7200 2    39   Input ~ 0
+ESP_TXD
+Text HLabel 1600 7400 2    39   Input ~ 0
+ESP_RXD
+Text HLabel 4550 4300 0    39   Input ~ 0
+ESP_GPIO_14
+Text HLabel 4550 4400 0    39   Input ~ 0
+ESP_GPIO_12
+Text HLabel 4550 4500 0    39   Input ~ 0
+ESP_GPIO_13
+Text HLabel 8000 4500 2    39   Input ~ 0
+ESP_GPIO_15
+Text HLabel 1600 6400 2    39   Input ~ 0
+ESP_GPIO_15
+Text HLabel 1600 6600 2    39   Input ~ 0
+ESP_GPIO_12
+Text HLabel 1600 6800 2    39   Input ~ 0
+ESP_GPIO_14
+Text HLabel 1600 7000 2    39   Input ~ 0
+ESP_GPIO_13
 $EndSCHEMATC
