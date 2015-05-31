@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-04-02 BZR 5568)-product   date = Sun 31 May 2015 12:43:22 BST
+Cmp-Mod V01 Created by Cvpcb (2015-04-02 BZR 5568)-product   date = Sun 31 May 2015 16:11:29 BST
 
 BeginCmp
 TimeStamp = /5565FD51/55661649;
@@ -88,7 +88,7 @@ BeginCmp
 TimeStamp = /5565FD51/5566063A;
 Reference = CON1;
 ValeurCmp = POWER_BARREL;
-IdModule  = ;
+IdModule  = Connect:BARREL_JACK;
 EndCmp
 
 BeginCmp
@@ -158,7 +158,7 @@ BeginCmp
 TimeStamp = /55667032/55668617;
 Reference = P4;
 ValeurCmp = CONN_CENTRONICS_24;
-IdModule  = ;
+IdModule  = gpib_conn_male:gpib_conn_male;
 EndCmp
 
 BeginCmp
@@ -172,7 +172,7 @@ BeginCmp
 TimeStamp = /5565FD51/5566119A;
 Reference = Q1;
 ValeurCmp = IRLML2246TR;
-IdModule  = SOT23;
+IdModule  = SOT23_Transistor_RevA_03Aug2010:SOT23_Transistor_Handsoldering_RevA_03Aug2010;
 EndCmp
 
 BeginCmp
@@ -256,82 +256,117 @@ BeginCmp
 TimeStamp = /55667032/5566861E;
 Reference = SW1;
 ValeurCmp = SW_RESET;
-IdModule  = ;
+IdModule  = open-project:SW_PUSH_SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667032/556A2227;
 Reference = SW2;
 ValeurCmp = SW_BOOTL;
-IdModule  = ;
+IdModule  = open-project:SW_PUSH_SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /5565FD51/556C2967;
 Reference = TP1;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/55669763;
 Reference = TP2;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/55669E4F;
 Reference = TP3;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/55669E83;
 Reference = TP4;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/55669EAD;
 Reference = TP5;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/55669F01;
 Reference = TP6;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/55669F33;
 Reference = TP7;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/55669F6B;
 Reference = TP8;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/5566A6E7;
 Reference = TP9;
 ValeurCmp = TESTPOINT;
-IdModule  = Connect:TESTPOINT;
+IdModule  = Connect:PINTST;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667043/5566A71B;
 Reference = TP10;
+ValeurCmp = TESTPOINT;
+IdModule  = Connect:PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5565FD51/556CDE3A;
+Reference = TP11;
+ValeurCmp = TESTPOINT;
+IdModule  = Connect:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /5565FD51/556CDE81;
+Reference = TP12;
+ValeurCmp = TESTPOINT;
+IdModule  = Connect:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /5565FD51/556CDEC6;
+Reference = TP13;
+ValeurCmp = TESTPOINT;
+IdModule  = Connect:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /5565FD51/556CDF54;
+Reference = TP14;
+ValeurCmp = TESTPOINT;
+IdModule  = Connect:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /5565FD51/556CDFBB;
+Reference = TP15;
 ValeurCmp = TESTPOINT;
 IdModule  = Connect:TESTPOINT;
 EndCmp
@@ -347,42 +382,42 @@ BeginCmp
 TimeStamp = /5565FD51/55660BBD;
 Reference = U2;
 ValeurCmp = AP1117E50G-13;
-IdModule  = SOT223;
+IdModule  = SOT223:SOT223;
 EndCmp
 
 BeginCmp
 TimeStamp = /5565FD51/55660C3A;
 Reference = U3;
 ValeurCmp = LM358;
-IdModule  = ;
+IdModule  = Housings_SOIC:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /5565FD51/55660648;
 Reference = U4;
 ValeurCmp = BA33BC0FP-E2;
-IdModule  = TO-252;
+IdModule  = ok-smd-generic:TO-252;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667032/5567A2FB;
 Reference = U5;
 ValeurCmp = STM32F072CBT6;
-IdModule  = LQFP48;
+IdModule  = LQFP:LQFP-48_7x7mm_Pitch0.5mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667032/55668609;
 Reference = U6;
 ValeurCmp = SN75160B;
-IdModule  = MODULE;
+IdModule  = Housings_SOIC:SOIC-20_7.5x12.8mm_Pitch1.27mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /55667032/55668610;
 Reference = U7;
 ValeurCmp = SN75162B;
-IdModule  = MODULE;
+IdModule  = Housings_SOIC:SOIC-24_7.5x15.4mm_Pitch1.27mm;
 EndCmp
 
 BeginCmp
@@ -390,41 +425,6 @@ TimeStamp = /55667043/55667714;
 Reference = U8;
 ValeurCmp = ESP-12/07v2/08v2;
 IdModule  = ESP8266:ESP-07;
-EndCmp
-
-BeginCmp
-TimeStamp = /5565FD51/55675FF1;
-Reference = W1;
-ValeurCmp = TEST_3.3V;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
-EndCmp
-
-BeginCmp
-TimeStamp = /5565FD51/55675FF8;
-Reference = W2;
-ValeurCmp = TEST_VIN;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
-EndCmp
-
-BeginCmp
-TimeStamp = /5565FD51/5567647D;
-Reference = W3;
-ValeurCmp = TEST_5V;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
-EndCmp
-
-BeginCmp
-TimeStamp = /5565FD51/55675FE3;
-Reference = W4;
-ValeurCmp = TEST_GND;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
-EndCmp
-
-BeginCmp
-TimeStamp = /5565FD51/55675FEA;
-Reference = W5;
-ValeurCmp = TEST_GND;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
 EndCmp
 
 EndListe
